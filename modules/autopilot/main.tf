@@ -19,7 +19,7 @@ resource "google_container_cluster_iam_binding" "gke_permissions" {
   location = google_container_cluster.autopilot_cluster.location
   role = "roles/container.admin"
   members = [
-    "serviceAccount:<your-service-account-email>"
+    "serviceAccount:insole01rusts@icloud.com"
   ]
 }
 
