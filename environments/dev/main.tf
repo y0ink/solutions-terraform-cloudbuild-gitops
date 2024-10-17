@@ -38,3 +38,7 @@ module "firewall" {
   project = "${var.project}"
   subnet  = "${module.vpc.subnet}"
 }
+module "autopilot" {
+  source  = "../../modules/autopilot"
+  project = "${var.project}"
+}
